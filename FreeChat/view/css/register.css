@@ -5,3 +5,8 @@ select#age{
 select#gender{
     width: 115px;
 }
+
+div#f{
+    position: relative;
+    bottom: -19%;
+}

@@ -33,7 +33,7 @@ class query implements UsersInterface{
     }
     public function register($data)
     {
-        $query = "INSERT INTO " . self::MAIN_TABLE . " (name, lastname, nickname, email, password, age, gender, nphone) VALUES ('" . $data['name'] . "', '" . $data['lastName'] . "', '" . $data['nickname'] . "', '" . $data['email'] . "', '" . $data['password'] . "', '" . $data['age'] . "', '" . $data['gender'] . "', '" . $data['nphone'] . "')";
+        $query = "INSERT INTO " . self::MAIN_TABLE . " (name, lastname, nickname, email, password, age, gender, nphone) VALUES ('" . $data['name'] . "', '" . $data['lastname'] . "', '" . $data['nickname'] . "', '" . $data['email'] . "', '" . $data['password'] . "', '" . $data['age'] . "', '" . $data['gender'] . "', '" . $data['nphone'] . "')";
         $this->conection->makequerys($query);
     }
 

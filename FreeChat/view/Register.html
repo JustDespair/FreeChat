@@ -1,4 +1,5 @@
 
+
 <html lang="en">
 
 <head>
@@ -14,23 +15,23 @@
 </head>
 
 <body>
-    <section class="vh-100" style="background-color: #eee;">
+    <section class="vh-100" style="background-color: rgb(255, 255, 255);">
         <div class="container h-100">
           <div class="row d-flex justify-content-center align-items-center h-100">
-            <div class="col-lg-12 col-xl-11">
-              <div class="card text-black" style="border-radius: 25px;">
+            <div class="col-lg-12 col-xl-11" style="background-color: rgb(0, 0, 0);">
+              <div class="card text-black" style="border-radius: 25px; ">
                 <div class="card-body p-md-5">
                   <div class="row justify-content-center">
                     <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
       
                       <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Register</p>
       
-                      <form class="mx-1 mx-md-4">
+                      <form id="register" action="../controller/register.php" class="mx-1 mx-md-4" method="post">
       
                         <div class="d-flex flex-row align-items-center mb-4">
                           <i class="fas fa-user fa-lg me-3 fa-fw"></i>
                           <div class="form-outline flex-fill mb-0">
-                            <input type="text" id="name" name="Name" class="form-control" />
+                            <input type="text" id="name" name="name" class="form-control" />
                             <label class="form-label" for="form3Example1c">Your Name</label>
                           </div>
                         </div>
@@ -38,7 +39,7 @@
                         <div class="d-flex flex-row align-items-center mb-4">
                           <i class="fas fa-user fa-lg me-3 fa-fw"></i>
                           <div class="form-outline flex-fill mb-0">
-                            <input type="text" id="lastname" name="Lastname" class="form-control" />
+                            <input type="text" id="lastname" name="lastname" class="form-control" />
                             <label class="form-label" for="form3Example3c">Your Lastname</label>
                           </div>
                         </div>
@@ -46,7 +47,7 @@
                         <div class="d-flex flex-row align-items-center mb-4">
                             <i class="fas fa-user fa-lg me-3 fa-fw"></i>
                             <div class="form-outline flex-fill mb-0">
-                              <input type="text" id="nickname" name="Nickname" class="form-control" />
+                              <input type="text" id="nickname" name="nickname" class="form-control" />
                               <label class="form-label" for="form3Example3c">Your Nickname</label>
                             </div>
                         </div>
@@ -54,7 +55,7 @@
                         <div class="d-flex flex-row align-items-center mb-4">
                             <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
                             <div class="form-outline flex-fill mb-0">
-                              <input type="email" id="email" name="Email" class="form-control" />
+                              <input type="email" id="email" name="email" class="form-control" />
                               <label class="form-label" for="form3Example3c">Your Email</label>
                             </div>
                         </div>
@@ -62,7 +63,7 @@
                         <div class="d-flex flex-row align-items-center mb-4">
                           <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
                           <div class="form-outline flex-fill mb-0">
-                            <input type="password" id="password" name="Password" class="form-control" />
+                            <input type="password" id="password" name="password" class="form-control" />
                             <label class="form-label" for="form3Example4c">Password</label>
                           </div>
                         </div>
@@ -70,32 +71,32 @@
                         <div class="d-flex flex-row align-items-center mb-4">
                           <i class="fas fa-address-card fa-lg me-3 fa-fw"></i>
                           <div>
-                            <select id="age" name="Age" class="form-select" aria-label="Default select example">
+                            <select id="age" name="age" class="form-select" aria-label="Default select example">
                                 <option selected>Your Age</option>
-                                <option value="1">8</option>
-                                <option value="2">9</option>
-                                <option value="3">10</option>
-                                <option value="4">11</option>
-                                <option value="5">12</option>
-                                <option value="6">13</option>
-                                <option value="7">14</option>
-                                <option value="8">15</option>
-                                <option value="9">16</option>
-                                <option value="10">17</option>
-                                <option value="11">18</option>
-                                <option value="12">19</option>
-                                <option value="13">20</option>
-                                <option value="14">21</option>
-                                <option value="15">22</option>
-                                <option value="16">23</option>
-                                <option value="17">24</option>
-                                <option value="18">25</option>
-                                <option value="19">26</option>
-                                <option value="20">27</option>
-                                <option value="21">28</option>
-                                <option value="22">29</option>
-                                <option value="23">30</option>
-                                <option value="24">31</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                                <option value="25">25</option>
+                                <option value="26">26</option>
+                                <option value="27">27</option>
+                                <option value="28">28</option>
+                                <option value="29">29</option>
+                                <option value="30">30</option>
+                                <option value="31">31</option>
                             </select>
                           </div>
                         </div>
@@ -103,11 +104,11 @@
                         <div class="d-flex flex-row align-items-center mb-4">
                             <i class="fas fa-address-card fa-lg me-3 fa-fw"></i>
                             <div>
-                              <select id="gender" name="Gender" class="form-select" aria-label="Default select example">
+                              <select id="gender" name="gender" class="form-select" aria-label="Default select example">
                                   <option selected>Gender</option>
-                                  <option value="1">Masculino</option>
-                                  <option value="2">Femenino</option>
-                                  <option value="3">Extraterrestre</option>
+                                  <option value="masculino">Masculino</option>
+                                  <option value="femenino">Femenino</option>
+                                  <option value="extraterrestre">Extraterrestre</option>
                               </select>
                             </div>
                         </div>
@@ -115,7 +116,7 @@
                         <div class="d-flex flex-row align-items-center mb-4">
                             <i class="fas fa-phone fa-lg me-3 fa-fw"></i>
                             <div class="form-outline flex-fill mb-0">
-                              <input type="text" id="nphone" class="form-control" />
+                              <input type="text" id="nphone" name="nphone" class="form-control" />
                               <label class="form-label" for="form3Example1c">Your Phone Number</label>
                             </div>
                         </div>
@@ -123,12 +124,12 @@
                         <div class="form-check d-flex justify-content-center mb-5">
                           <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3c" />
                           <label class="form-check-label" for="form2Example3">
-                            I agree all statements in <a href="#!">Terms of service</a>
+                            I agree all statements in <a href="Terminos.php">Terms of service</a>
                           </label>
                         </div>
       
                         <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
-                          <button type="button" class="btn btn-primary btn-lg">Register</button>
+                          <button type="submit" id="btnregister" name="register" class="btn btn-primary btn-lg">Register</button>
                         </div>
       
                       </form>
@@ -157,5 +158,6 @@
     $("#f").load("Footer2.html"); 
   });
 </script>
+<script src="js/register.js"></script>
 
 </html>
